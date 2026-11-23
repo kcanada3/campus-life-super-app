@@ -30,6 +30,57 @@
                     </ul>
                 </nav>
             </header>
+            <main>
+                <!-- Header for the events page -->
+                <section class="home-section">
+                    <div class="home-text">
+                        <h2>Campus Events</h2>
+                        <p>Discover upcoming events, activities, and opportunities around campus.</p>
+                    </div>
+                    <img class="campus-class" alt="Image of Dell the mascot" src="./images/dell.jpeg"/>
+                </section>
+
+                <form class="event-filters" role="search">
+                    <div class="filter-group filter-search">
+                        <label for="event-search">Search</label>
+                        <input type="search" id="event-search" name="search" placeholder="Search events">
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="event-category">Category</label>
+                        <select id="event-category" name="category">
+                            <option value="">All categories</option>
+                            <option value="athletics">Athletics</option>
+                            <option value="arts">Arts</option>
+                            <option value="academic">Academic</option>
+                            <option value="social">Social</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="event-date">Date</label>
+                        <input type="date" id="event-date" name="date">
+                    </div>
+                </form>
+
+                <!-- Event Cards -->
+                <div class="card-row">
+                    <!-- These are the event cards with the event information -->
+                    <section class="col-md-4">
+
+                    </section>
+
+                    <!-- This is the campus events card -->
+                    <section class="col-md-4">
+
+                    </section>
+
+                    <!-- This is the dining services card -->
+                    <section class="col-md-4">
+
+                    </section>
+                </div>
+            </main>
         </div>
     </body>
 </html>

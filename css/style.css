@@ -213,8 +213,49 @@ header {
     margin: 0;
 }
 
+/* event filters styling */
+.event-filters {
+    display: flex;
+    align-items: end;
+    gap: 16px;
+    margin-bottom: 24px;
+    padding: 20px;
+    background-color: #191e27;
+    border: 1px solid red;
+    border-radius: 12px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.filter-search {
+    flex: 1;
+}
+
+.event-filters label {
+    font-weight: bold;
+}
+
+.event-filters input,
+.event-filters select {
+    min-height: 44px;
+    border: 1px solid #303849;
+    border-radius: 8px;
+    background-color: white;
+    color: black;
+    padding: 8px 12px;
+}
+
 /* design for smaller screens */
 @media (max-width: 768px) {
+    .event-filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
     .card-row {
         flex-direction: column;
     }
