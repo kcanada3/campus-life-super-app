@@ -1,0 +1,106 @@
+/* global page styling */
+body {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* centers the content on each page */
+.container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* boxes around the content of the pages */
+main section {
+    background-color: #191e27;
+    border: 1px solid #303849;
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin-bottom: 24px;
+    min-width: 0;
+}
+
+/* image styling */
+img {
+    border-radius: 8px;
+    display: block;
+}
+
+.hornet-class {
+    width: 100px;
+    max-width: 220px;
+    height: 275px;
+    object-fit: cover;
+    object-position: center top;
+    margin: 16px;
+}
+
+.campus-class {
+
+}
+
+/* title and hornet logo styling for index.html */
+header {
+    position: relative;
+    height: 120px;
+}
+
+.title-row {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding-left: 16px;
+}
+
+.title-row .hornet-class {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0;
+}
+
+/* title heading */
+.title {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* nav bar styling */
+.top-nav {
+    position: absolute;
+    top: 40px;
+    right: 25px;
+}
+
+.top-nav ul {
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+/* design for smaller screens */
