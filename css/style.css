@@ -7,7 +7,7 @@ body {
 }
 
 * {
-    font-family: sans-serif;
+    font-family: 'Lato';
     box-sizing: border-box;
 }
 
@@ -23,7 +23,7 @@ body {
 /* boxes around the content of the pages */
 main section {
     background-color: #191e27;
-    border: 1px solid #303849;
+    border: 1px solid red;
     border-radius: 12px;
     padding: 24px 28px;
     margin-bottom: 24px;
@@ -46,7 +46,39 @@ img {
 }
 
 .campus-class {
+    width: 48%;
+    max-width: 520px;
+    height: 320px;
+    object-fit: cover;
+    align-self: center;
+}
 
+/* home page header styling */
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.home-text {
+    width: 48%;
+    max-width: 520px;
+}
+
+.event-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.event-button:hover {
+    background-color: #aa0000;
 }
 
 /* title and hornet logo styling for index.html */
@@ -57,7 +89,7 @@ header {
 
 .title-row {
     position: absolute;
-    top: 5px;
+    top: 8px;
     left: 0;
     display: flex;
     align-items: center;
@@ -103,4 +135,91 @@ header {
     text-decoration: underline;
 }
 
+.top-nav a.active {
+    color: red;
+    font-weight: bold;
+}
+
+/* card row styling */
+.card-row {
+    display: flex;
+    gap: 24px;
+}
+
+.card-row section {
+    flex: 1;
+}
+
+.card-row details {
+    cursor: pointer;
+}
+
+.card-row summary {
+    font-weight: bold;
+}
+
+.card-row details p {
+    margin-top: 8px;
+}
+
+/* link styling */
+.link-style {
+    color: red;
+    text-decoration: underline;
+}
+
+/* calendar styling */
+.calendar-section h2 {
+    margin-top: 0;
+}
+
+.event-calendar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.calendar-event {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid #303849;
+    border-radius: 8px;
+}
+
+.calendar-event time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 72px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: red;
+}
+
+.event-month {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.event-day {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.event-details h3,
+.event-details p {
+    margin: 0;
+}
+
 /* design for smaller screens */
+@media (max-width: 768px) {
+    .card-row {
+        flex-direction: column;
+    }
+
+    .event-calendar {
+        grid-template-columns: 1fr;
+    }
+}

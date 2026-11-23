@@ -23,21 +23,98 @@
                 </div>
                 <nav class="top-nav" aria-label="Main navigation">
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
+                        <li><a class="active" href="./index.html" aria-current="page">Home</a></li>
                         <li><a href="./events.html">Events</a></li>
                         <li><a href="./dining.html">Dining</a></li>
                         <li><a href="./study.html">Study</a></li>
                     </ul>
                 </nav>
             </header>
+            <!-- This is the main content area where the bulk of the home page will go -->
             <main>
-                <!-- This is the main content area where the bulk of the home page will go-->
-                <section>
-                    <h2>L-YEAH</h2>
-                    <h2>Home of the Hornets</h2>
-                    <p>From a meal at Burton to a study break at Knight-Capron.</p>
-                    <p>Make the most of life as a Hornet, all in one place.</p>
+                <!-- Welcome/Intro section on the home page -->
+                <section class="home-section">
+                    <div class="home-text">
+                        <h2>L-YEAH</h2>
+                        <h2>Home of the Hornets</h2>
+                        <p>From a meal at Burton to a study break at Knight-Capron.<br>
+                            Make the most of life as a Hornet, all in one place.</p>
+                        <a class="event-button" href="#">See what's happening</a>
+                    </div>
                     <img class="campus-class" alt="Image of Campus Building" src="./images/campus.jpg"/>
+                </section>
+
+                <!-- Weather, Events, and Dining Services cards on the home page -->
+                <div class="card-row">
+                    <!-- This is the weather information card -->
+                    <section class="col-md-4">
+                        <h3>Lynchburg, Virginia</h3>
+                        <h1>55°F</h1>
+                        <p>Sunny</p>
+                        <p>High: 57°F | Low: 39°F</p>
+                        <a class="link-style" href="https://weather.com/us/virginia/city/lynchburg/today">View Full Forecast</a>
+                    </section>
+
+                    <!-- This is the campus events card -->
+                    <section class="col-md-4">
+                        <h3>Coming Up This Week</h3>
+                        <h1>2</h1>
+                        <p>Campus Event(s)</p>
+                        <p>Make room for something new</p>
+                        <a class="link-style" href="https://www.lynchburg.edu/events/">View Event List</a>
+                    </section>
+
+                    <!-- This is the dining services card -->
+                    <section class="col-md-4">
+                        <h3>Dining Services</h3>
+                        <h1>Menus & Hours</h1>
+                        <p>Meet up in the caf at Drysdale</p>
+                        <p>View Burton's Menu<br>Dining Services Website<br>Other Dining Options & Hours</p>
+                        <details>
+                            <summary>Burton's Regular Hours</summary>
+                            <p>Monday-Friday<br>&emsp;Breakfast: 7 - 10 am<br>&emsp;Continental: 10 - 11 am<br>&emsp;Lunch: 11 am - 2 pm<br>&emsp;Late Lunch: 2 - 4:30 pm<br>&emsp;Dinner: 4:30 - 7 pm</p>
+                            <p>Monday-Thursday<br>&emsp;Extended Dining: 7 - 10 pm</p>
+                            <p>Saturday-Sunday<br>&emsp;Brunch: 10:30 am - 2 pm<br>&emsp;Deli & Salad Bar: 2 - 4:30 pm<br>&emsp;Dinner: 4:30 - 7 pm</p>
+                        </details>
+                    </section>
+                </div>
+
+                <!-- Campus Events in calendar style -->
+                <section class="calendar-section">
+                    <h2>Campus Events</h2>
+                    <div class="event-calendar">
+                        <article class="calendar-event">
+                            <time datetime="2026-11-24">
+                                <span class="event-month">NOV</span>
+                                <span class="event-day">24</span>
+                            </time>
+                            <div class="event-details">
+                                <h3>Event Name</h3>
+                                <p>Location</p>
+                            </div>
+                        </article>
+                        <article class="calendar-event">
+                            <time datetime="2026-11-25">
+                                <span class="event-month">NOV</span>
+                                <span class="event-day">25</span>
+                            </time>
+                            <div class="event-details">
+                                <h3>Event Name</h3>
+                                <p>Location</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Study spots on campus -->
+                <section class="home-section">
+                    <div class="home-text">
+                        <h3>Find your Focus</h3>
+                        <h1>Your next favorite study spot</h1>
+                        <p>Find your focus at various locations across campus.</p>
+                        <a class="link-style" href="./study.html">Find study spots</a>
+                    </div>
+                    <img class="campus-class" alt="Image of Library" src="./images/library.jpeg"/>
                 </section>
             </main>
         </div>
