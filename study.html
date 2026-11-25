@@ -30,6 +30,43 @@
                     </ul>
                 </nav>
             </header>
+            <main>
+                <!-- Header for the study page -->
+                <section class="home-section">
+                    <div class="home-text">
+                        <h2>Study Spots</h2>
+                        <p>Find the best places on campus to study, from quiet spaces to group areas.</p>
+                    </div>
+                    <img class="campus-class" alt="Image of Schewel Hall" src="./images/schewel.jpg"/>
+                </section>
+
+                <form class="study-filters" role="search">
+                    <div class="filter-group filter-search">
+                        <label for="study-search">Search</label>
+                        <input type="search" id="study-search" name="search" placeholder="Search study spots">
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="study-type">Type</label>
+                        <select id="study-type" name="type">
+                            <option value="">All types</option>
+                            <option value="quiet">Quiet</option>
+                            <option value="group">Group study</option>
+                            <option value="outdoor">Outdoor</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="study-amenity">Amenities</label>
+                        <select id="study-amenity" name="amenity">
+                            <option value="">All amenities</option>
+                            <option value="wifi">Wi-Fi</option>
+                            <option value="outlets">Outlets</option>
+                            <option value="whiteboards">Whiteboards</option>
+                        </select>
+                    </div>
+                </form>
+            </main>
         </div>
     </body>
 </html>

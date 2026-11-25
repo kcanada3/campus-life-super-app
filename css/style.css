@@ -213,8 +213,9 @@ header {
     margin: 0;
 }
 
-/* event filters styling */
-.event-filters {
+/* event and study filters styling */
+.event-filters,
+.study-filters {
     display: flex;
     align-items: end;
     gap: 16px;
@@ -235,12 +236,15 @@ header {
     flex: 1;
 }
 
-.event-filters label {
+.event-filters label,
+.study-filters label {
     font-weight: bold;
 }
 
 .event-filters input,
-.event-filters select {
+.event-filters select,
+.study-filters input,
+.study-filters select {
     min-height: 44px;
     border: 1px solid #303849;
     border-radius: 8px;
@@ -251,7 +255,8 @@ header {
 
 /* design for smaller screens */
 @media (max-width: 768px) {
-    .event-filters {
+    .event-filters,
+    .study-filters {
         flex-direction: column;
         align-items: stretch;
     }
